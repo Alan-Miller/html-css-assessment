@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+#main-section {
+  position: relative;
+  background-image: url("./img/main-bg.jpeg");
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+}
+
+#main-nav {
+  height: 120px;
+  position: relative;
+  display: block;
+}
+
+#nav-ul {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mobile-nav {
+  height: 120px;
+  position: relative;
+  display: none;
+  justify-content: space-between;
+}
+
+.ham-menu {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  background-image: url('./img/ham3.png');
+  -webkit-background-size: 75px 75px;
+          background-size: 75px 75px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social-links {
+  /*width: 300px;*/
+  height: 120px;
+  position: relative;
+  display: flex;
+}
+
+.twitter, .facebook {
+  /*background-color: gray;*/
+  background-image: url('./img/twitter.png');
+  height: 120px;
+  width: 120px;
+  -webkit-background-size: 20px 20px;
+          background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.facebook {
+  background-image: url('./img/facebook2.png');
+  margin-right: 40px;
+}
+
+#ypp {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.big-text {
+  font-size: 8rem;
+}
+
+#down-arrow {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translate(-50%, 0);
+  background-image: url('./img/arrow1.png');
+  -webkit-background-size: 90px 90px;
+          background-size: 90px 90px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media(max-width: 700px) {
+  #main-nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: flex;
+  }
+}
